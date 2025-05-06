@@ -37,7 +37,7 @@ function calculaTempo(tempoObjetivo) {
     if (tempoFinal > 0) {
         return [dias, horas, minutos, segundos];
     } else {
-        return [215,4 , 49, 48];
+        return [215,4 , 49, ];
     }
 }
 
@@ -50,7 +50,7 @@ function atualizaCronometro() {
     }
 }
 
-function comecaCronometro() {
+function comecaCronometro() { void
     atualizaCronometro();
     setInterval(atualizaCronometro, 1000);
 }
